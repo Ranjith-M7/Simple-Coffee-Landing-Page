@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+:root{
+    --color-1: #e3b8af;
+    --color-2: #e8e7e3;
+    --text-color: #682713;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--color-1);
+    color: var(--text-color);
+}
+/*Utility Styles*/
+button{
+    padding: 10px 30px;
+    font-family: "Playfair Display",serif;
+    color: var(--text-color);
+    background: transparent;
+    border: 2px solid var(--text-color);
+    cursor: pointer;
+}
+
+/*Nav Section*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--t);
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    color: var(--t);
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+li a:hover{
+    border-bottom: 2px solid var(--text-color);
+}
+/*Header Section*/
+.header-container{
+    height: 100vh;
+    background: linear-gradient(to right, var(--c1)60%, var(--c2) 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Playfair Display",serif;
+}
+.header-container .content-section{
+    width: 600px;
+    padding: 20px;
+}
+.main-heading{
+    font-size: 7rem;
+}
+.sub-heading{
+    font-size: 3.5rem;
+    color: var(--text-color); 
+}
+.header-container .content-section p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: justify;
+    background: #d4a59b;
+    border-left: 3px solid var(--text-color);
+    padding: 10px;
+}
+
+.coffee-image{
+    background: url(pngwing.png);
+    background: url(pngwing.png);
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    transform: scaleX(-1);
+}
+
+/*Our Story Section*/
+.our-story-container{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.img1{
+    width: 400px;
+    height: 400px;
+}
+.our-story-container .content-section{
+    width: 500px;
+}
+.our-story-container .content-section .title-style{
+    display: flex;
+    align-items: center;
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background: var(--);
+    transform: translateX(-120px);
+}
+.title-one{
+    font-size: 4rem;
+    font-family: "Playfair Display",serif;
+    transform: translateX(-100px);
+}
+.our-story-container p{
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+/*Coffee Section*/
+.coffee-container{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.coffee-container .content-section{
+    width: 500px;
+}
+.title-two{
+    font-size: 4rem;   
+    font-family: "Playfair Display",serif;
+}
+.coffee-container .content-section p{
+    line-height: 20px;
+    margin: 20px 0;
+}
+.img2{
+    width: 400px;
+    height: 400px;
+}
+
+/*Product Section*/
+.product-container{
+    margin-top: 10%;
+}
+.product-section-title{
+    font-size: 4rem;   
+    font-family: "Playfair Display",serif;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    border: 2px solid var(--text-color);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+    border: 2px solid var(--text-color);
+    padding: 0 20px;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.p-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -60px;
+}
+.product-image-1{
+    background: url(images/7.png);
+    background-position: center;
+    background-size: cover;
+}
+.product-image-2{
+    background: url(images/8.png);
+    background-position: center;
+    background-size: cover;
+}
+.product-image-3{
+    background: url(images/6.png);
+    background-position: center;
+    background-size: cover;
+}
+.product-items p{
+    margin: 20px 0;
+}
+
+/*Footer Section*/
+.site-footer{
+    height: 50vh;
+    font-family: sans-serif;
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.info-section{
+    text-align: center;
+    width: 300px;
+    margin: 40px;
+}
+.info-section h1{
+    font-size: 2rem;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+span{
+    color: #556b2f;
+    font-weight: bold;
+}
+.copyright{
+    display: flex;
+    justify-content: center;   
+}
+/*Responsiveness*/
+@media only screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+    .our-story-container, .coffee-container{
+        text-align: center;
+    }
+    .title-one{
+        transform: translateX(0);
+    }
+    .coffee-image{
+        display: none;
+    }
+
+}
+
